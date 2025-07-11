@@ -164,4 +164,4 @@ jobs:
           ./release/adminpanel-windows-latest/adminpanel.exe
           ./release/adminpanel-ubuntu-latest/adminpanel
         generate_release_notes: true
-        discussion_category_name: release
+        discussion_category_name: release 
