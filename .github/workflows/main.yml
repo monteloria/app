@@ -58,7 +58,7 @@ jobs:
           tag:  ${{ steps.bump-semver.outputs.new_version }}
           commit: true
           branch_to_push: 'main'
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+         
      
 
    sea-action:
