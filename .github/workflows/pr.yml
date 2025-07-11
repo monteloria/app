@@ -15,7 +15,7 @@ jobs:
       - uses: actions-ecosystem/action-size@v2
         id: size
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           size_xs_label: release/patch
           size_s_label: release/patch
           size_m_label: release/minor
@@ -25,12 +25,12 @@ jobs:
 
       - uses: actions-ecosystem/action-remove-labels@v1
         with:
-          github_token: ${{ secrets.github_token }}
+          github_token: ${{ secrets.TOKEN }}
           labels: ${{ steps.size.outputs.stale_labels }}
 
       - uses: actions-ecosystem/action-add-labels@v1
         with:
-          github_token: ${{ secrets.github_token }}
+          github_token: ${{ secrets.TOKEN }}
           labels: ${{ steps.size.outputs.new_label }}
 
 
